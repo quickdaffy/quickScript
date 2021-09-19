@@ -1,0 +1,1 @@
+ba::print('Hello World!')
