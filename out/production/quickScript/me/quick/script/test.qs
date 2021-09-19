@@ -1,1 +1,0 @@
-ba::print('Hello World!')
