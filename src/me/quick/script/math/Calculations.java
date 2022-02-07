@@ -9,6 +9,30 @@ public class Calculations {
             System.out.println(ParsingUtil.getInBetweenParenthesis(input));
             return this.sqrt(ParsingUtil.getInBetweenParenthesis(input));
         }
+        else if(input.startsWith("cos")) {
+            System.out.println(ParsingUtil.getInBetweenParenthesis(input));
+            return this.cos(ParsingUtil.getInBetweenParenthesis(input));
+        }
+        else if(input.startsWith("sin")) {
+            System.out.println(ParsingUtil.getInBetweenParenthesis(input));
+            return this.sin(ParsingUtil.getInBetweenParenthesis(input));
+        }
+        else if(input.startsWith("tan")) {
+            System.out.println(ParsingUtil.getInBetweenParenthesis(input));
+            return this.tan(ParsingUtil.getInBetweenParenthesis(input));
+        }
+        else if(input.startsWith("acos")) {
+            System.out.println(ParsingUtil.getInBetweenParenthesis(input));
+            return this.acos(ParsingUtil.getInBetweenParenthesis(input));
+        }
+        else if(input.startsWith("asin")) {
+            System.out.println(ParsingUtil.getInBetweenParenthesis(input));
+            return this.asin(ParsingUtil.getInBetweenParenthesis(input));
+        }
+        else if(input.startsWith("atan")) {
+            System.out.println(ParsingUtil.getInBetweenParenthesis(input));
+            return this.atan(ParsingUtil.getInBetweenParenthesis(input));
+        }
 
         return 0;
     }
@@ -44,4 +68,33 @@ public class Calculations {
         return Math.sqrt(toSqrt);
     }
 
+    public static double cos(String toSolve) {
+        double toCos = Double.parseDouble(toSolve);
+        return Math.cos(toCos);
+    }
+
+    public static double sin(String toSolve) {
+        double toSin = Double.parseDouble(toSolve);
+        return Math.sin(toSin);
+    }
+
+    public static double tan(String toSolve) {
+        double toTan = Double.parseDouble(toSolve);
+        return Math.tan(toTan);
+    }
+
+    public static double acos(String toSolve) {
+        double toCos = Double.parseDouble(toSolve);
+        return Math.asin(toCos);
+    }
+
+    public static double asin(String toSolve) {
+        double toSin = Double.parseDouble(toSolve);
+        return Math.asin(toSin);
+    }
+
+    public static double atan(String toSolve) {
+        double toTan = Double.parseDouble(toSolve);
+        return Math.atan(toTan);
+    }
 }
